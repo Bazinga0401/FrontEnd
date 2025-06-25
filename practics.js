@@ -183,7 +183,7 @@ function setupTaskEvents(tasks) {
           alert('Upload failed');
         }
       } catch (err) {
-        console.error('Upload error:', err);
+       console.error('Upload error:', err?.message || err);
         alert('Server error while uploading');
       }
     };
